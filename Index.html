@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaurav's Portfolio</title>
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papb4t+QwWvZzFtFl9Q4IjXzChXskOwS75ZH+uHqUvZLQgYyAYyS1AzpW7vKPKoLXn1+nRt+0F0YFlbTfP4vHg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gaurav <span>👋</span></h1>
+      <p><i class="fa-brands fa-java"></i> Java & <i class="fa-brands fa-react"></i> React Developer</p>
+      <p>5 years of experience building multiple impactful projects.</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav-list container">
+      <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#projects"><i class="fa-solid fa-code"></i> Projects</a></li>
+      <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="about" class="container section-fade">
+    <h2>About Me</h2>
+    <p>
+      I'm Gaurav, a passionate software developer with 5 years of experience in Java and React.
+      I specialize in building scalable web applications and crafting seamless user experiences.
+    </p>
+  </section>
+
+  <section id="projects" class="container section-fade">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3><i class="fa-solid fa-laptop-code"></i> Portfolio Website</h3>
+        <p>A modern portfolio website built with HTML, CSS, and JavaScript showcasing my skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <h3><i class="fa-solid fa-shop"></i> Mini E-commerce</h3>
+        <p>A full-featured mini e-commerce site with product listings, cart functionality, and checkout flow.</p>
+      </div>
+      <div class="project-card">
+        <h3><i class="fa-brands fa-react"></i> React Dashboard</h3>
+        <p>A React-based admin dashboard with charts, tables, and real-time updates for business insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container section-fade">
+    <h2>Contact Me</h2>
+    <form id="contact-form" autocomplete="off">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn-animated">
+        Send Message <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+    <p id="form-status"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Gaurav. All rights reserved.</p>
+  </footer>
+
+  <script src="Script.js"></script>
+</body>
+</html>
